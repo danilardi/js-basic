@@ -13,6 +13,11 @@ Create an object called `person` with these properties:
 | name | "John"      |
 | age  | 25          |
 | job  | "Developer" |
+| Key  | Value       |
+| ---- | ----------- |
+| name | "John"      |
+| age  | 25          |
+| job  | "Developer" |
 
 ```javascript
 // your code here
@@ -29,6 +34,7 @@ const person = {
 ## 2. Access Object Properties
 
 Use `console.log` to display:
+
 
 - The person's name
 - The person's job
@@ -83,6 +89,13 @@ delete person.job;
 
 Create an object `student` with:
 
+| Key       | Value        |
+| --------- | ------------ |
+| name      | "Alice"      |
+| grade     | 90           |
+| address   | object with: |
+| - city    | "Jakarta"    |
+| - country | "Indonesia"  |
 | Key       | Value        |
 | --------- | ------------ |
 | name      | "Alice"      |
