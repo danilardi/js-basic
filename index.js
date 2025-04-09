@@ -218,3 +218,7 @@ tes[10] = "c";
 
 const fruits = ["Apple", "Banana", "Orange"];
 console.log(fruits.includes("Bananaa"));
+
+console.log(fruits.indexOf("Banana"));
+
+console.log(fruits.join(","));
