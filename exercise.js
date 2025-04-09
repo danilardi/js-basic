@@ -1,24 +1,20 @@
-function calculateTotalParkingFee(vehicleType, hoursParked) {
-    const rateBaseCar = 5000;
-    const ratePerHourCar = 3000;
-    const rateBaseBike = 2000;
-    const ratePerHourBike = 1000;
+function calculateTotalParkingFee(vehicleType, duration) {
+    const rates = {
+        car: {
+            base: 5000,
+            perHour: 3000,
+            extraChargeOver24: 50000
+        },
+        bike: {
+            base: 2000,
+            perHour: 1000,
+            extraChargeOver24: 20000
+        }
+    }
 
-    let totalFee = 0;
-
-    switch(vehicleType) {
-        case "car":
-            totalFee = rateBaseCar + (ratePerHourCar * (hoursParked-1));
-            if (hoursParked > 24) {
-                totalFee += 50000;
-            }
-            break;
-        case "bike":
-            totalFee = rateBaseBike + (ratePerHourBike * (hoursParked-1));
-            if (hoursParked > 24) {
-                totalFee += 20000;
-            }
-            break;
+    let totalFee = rates[vehicleType].base + (rates[vehicleType].perHour * (duration -1));
+    if (duration > 24) {
+        totalFee += rates[vehicleType].extraChargeOver24;
     }
 
     console.log(totalFee);
