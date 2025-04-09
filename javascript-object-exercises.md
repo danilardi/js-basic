@@ -124,6 +124,8 @@ Then call it.
 person.greet = function () {
     return `Hi, my name is ${this.name}`
 };
+
+console.log(person.greet());
 ```
 
 ---
