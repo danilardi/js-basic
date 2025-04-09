@@ -216,3 +216,5 @@ tes[10] = "c";
 
 // =============================================================================================
 
+const fruits = ["Apple", "Banana", "Orange"];
+console.log(fruits.includes("Bananaa"));
