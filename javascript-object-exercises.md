@@ -16,6 +16,7 @@ Create an object called `person` with these properties:
 
 ```javascript
 // your code here
+
 const person = {
   name: "John",
   age: 25,
@@ -34,6 +35,7 @@ Use `console.log` to display:
 
 ```javascript
 // your code here
+
 console.log(person.name);
 
 console.log(person.job);
@@ -47,6 +49,8 @@ Add a new property called `hobby` with value `"Reading"` to the `person` object.
 
 ```javascript
 // your code here
+
+person.hobby = "Reading";
 ```
 
 ---
